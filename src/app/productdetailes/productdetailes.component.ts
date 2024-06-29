@@ -35,23 +35,31 @@ export class ProductdetailesComponent implements OnInit{
       next:(response)=> this.productDetails = response.data
     })
 
+    
+
   }
-  // customOptions: OwlOptions = {
-  //   loop: true,
-  //   mouseDrag: true,
-  //   touchDrag: false,
-  //   pullDrag: false,
-  //   dots: false,
-  //   navSpeed: 700,
-  //   navText: ['', ''],
-  //   responsive: {
-  //     0: {
-  //       items: 1
-  //     },
+
+  
+  addToCart(productId:string , productTitle: string)
+{
+  this.loading = true
+  this._CartService.addToCart(productId).subscribe({
+    next:(response)=> 
+    {
+      this._CartService.numberOfCartItem.next(response.numOfCartItems)
+      this.toastr.success(`${productTitle} has been added to your cart!`, 'Success');
+      console.log(response)
       
-  //   },
-  //   nav: true
-  // }
+    },
+    error:(err)=>
+      {console.log(err) 
+      
+      },
+      complete: () => {
+        this.loading = false; // Setting loading to false after the operation completes, regardless of success or error
+      }
+  })
+}
 
 
   customOptions: OwlOptions = {
