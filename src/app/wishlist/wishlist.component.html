@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="bg-main-light p-4 my-4">
+        <h3 class="text-main text-center">Wish List</h3>
+
+    </div>
+    <div *ngFor="let product of listDetails" class="row align-items-center border-bottom py-3">
+
+        <div class="col-md-1">
+            <img class="w-100" [src]="product?.imageCover" alt="">
+        </div>
+
+        <div class="col-md-11 d-flex justify-content-between">
+            <div>       
+                <h6>{{product.title}}</h6>
+                <h6 class="text-main">Price : {{product.price}}</h6>
+                <div>
+                    <ng-container *ngFor="let star of getStars(product.ratingsAverage)">
+                        <i [ngClass]="star"></i>
+                    </ng-container>
+                    <span class="text-muted fw-bold font-sm">{{product.ratingsAverage}}</span>
+                </div>
+            </div>
+
+            <div>
+                <button (click)="removeFromWishList(product.id, product.title)" class="btn m-0 p-0"> <i class="fa-regular text-main fa-trash-can"></i> Remove Item </button>
+            </div>
+        </div>
+
+    </div>
+</div>

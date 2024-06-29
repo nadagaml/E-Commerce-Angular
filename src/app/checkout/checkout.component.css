@@ -1,0 +1,103 @@
+/* @media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+} */
+.checkout {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+.coupon__link {
+    font-size: 14px;
+    color: #444444;
+    padding: 14px 0;
+    background: #f5f5f5;
+    border-top: 2px solid #ca1515;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.coupon__link span {
+    font-size: 14px;
+    color: #ca1515;
+}
+.icon_tag_alt:before {
+    content: "";
+}
+
+.checkout__form h5 {
+    color: #111111;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+.checkout__order {
+    background: #f5f5f5;
+    padding: 30px;
+}
+.checkout__order h5 {
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 18px;
+}
+.checkout__form h5 {
+    color: #111111;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+.checkout__order__product {
+    border-bottom: 1px solid #d7d7d7;
+    padding-bottom: 22px;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+    font-size: 14px;
+    color: #444444;
+    font-weight: 500;
+    overflow: hidden;
+    margin-bottom: 14px;
+    line-height: 24px;
+}
+.checkout__order__product ul li .top__text {
+    font-size: 16px;
+    color: #111111;
+    font-weight: 600;
+    float: left;
+}
+.checkout__order__product ul li span {
+    font-size: 14px;
+    color: #111111;
+    font-weight: 600;
+    float: right;
+}
+.checkout__order__total {
+    padding-top: 12px;
+    border-bottom: 1px solid #d7d7d7;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+.checkout__order__total ul li {
+    list-style: none;
+    font-size: 16px;
+    color: #111111;
+    font-weight: 600;
+    overflow: hidden;
+    line-height: 40px;
+}
+.checkout__order__total ul li span {
+    color: #ca1515;
+    float: right;
+}
+.checkout__order .site-btn {
+    width: 100%;
+}
+.checkout__form .checkout__form__input  span {
+    color: #ca1515;
+}

@@ -1,0 +1,85 @@
+.section-title h4 {
+    color: #111111;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+.section-title h4:after {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 70px;
+    background: #ca1515;
+    content: "";
+}
+
+/* Custom cursor style for the entire carousel */
+.owl-carousel {
+    cursor: grab;
+  }
+  
+  .owl-carousel .owl-stage-outer {
+    cursor: grab;
+  }
+  
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next {
+    cursor: pointer;
+  }
+  
+  /* Custom cursor style when dragging */
+  .owl-carousel .owl-stage-outer:active {
+    cursor: grabbing;
+  }
+  
+  /* Additional styling for navigation buttons */
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next {
+    font-size: 2rem;
+    color: #000; /* Change to desired color */
+  }
+  
+  /* Styling for carousel items */
+  /* .categories__item {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+  } */
+  
+  /* .categories__item h5  */
+  /* h5{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+  } */
+  
+  /* Set a fixed height for images */
+  /* .categories__item img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+  } */
+  .custom-height {
+    /* height: 200px; */
+     /* Adjust the height as needed */
+    background-size: cover; /* Ensures the image covers the div */
+    background-position: center; /* Centers the image within the div */
+  }
+  
+  /* .owl-carousel .categories__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+  } */
+  
+  

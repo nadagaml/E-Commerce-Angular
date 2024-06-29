@@ -1,0 +1,160 @@
+.header {
+    background: #ffffff;
+    -webkit-box-shadow: 0px 5px 10px rgba(91, 91, 91, 0.1);
+    box-shadow: 0px 5px 10px rgba(91, 91, 91, 0.1);
+}
+
+/* logo img */
+
+.header__logo {
+    padding: 26px 0;
+}
+.header__logo a {
+    display: inline-block;
+}
+
+.nav-bar-logo {
+    color: #000000;
+    text-decoration: none;
+    background-color: transparent;
+    padding-left: 50px;
+    padding-top: 10px;
+    font-size: x-large;
+    font-weight: bolder;
+  
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    /* width: 100%;
+    height: 00px;
+    padding: 20px; */
+}
+
+/* nav bar ul */
+
+.header__menu {
+    padding: 30px 0 27px;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+.header__menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+    position: relative;
+}
+.header__menu ul li a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #111111;
+    font-weight: 500;
+    display: block;
+    padding: 2px 0;
+    position: relative;
+}
+.header__menu ul li.active a:after {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.header__menu ul li a:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #ca1515;
+    content: "";
+    -webkit-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+    transition: all, 0.5s;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+.header__menu ul li a:hover:after {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.header__menu ul li .dropdown {
+    position: absolute;
+    left: 0;
+    top: 56px;
+    width: 150px;
+    background: #111111;
+    text-align: left;
+    padding: 2px 0;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    transition: all, 0.3s;
+}
+/* Make dropdown visible on hover */
+.header__menu ul li:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+.header__menu ul li .dropdown li {
+    display: block;
+    margin-right: 0;
+}
+.header__menu ul li .dropdown li a {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 8px 20px;
+    text-transform: capitalize;
+}
+
+/* header__right */
+
+.header__right {
+    text-align: right;
+    padding: 30px 0 27px;
+}
+.header__right__auth {
+    display: inline-block;
+    margin-right: 25px;
+}
+.header__right__widget {
+    display: inline-block;
+}
+.header__right__auth a {
+    font-size: 18px;
+    color: #666666;
+    position: relative;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.header__right__auth a:last-child {
+    margin-right: 0;
+}
+
+.header__right__widget li {
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    color: #111111;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.arrow_expand, .arrow_carrot-left, .arrow_carrot-right, .icon_close, .icon_search, .icon_adjust-horiz, .icon_bag_alt, .icon_tag_alt, .icon_loading, .icon_heart_alt {
+    font-family: 'ElegantIcons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.icon_search:before {
+    content: "\55";
+}
